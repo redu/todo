@@ -1,4 +1,8 @@
 Todo::Application.routes.draw do
+  resources :projects, :except => [:edit, :update] do
+    resources :todo_items
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
