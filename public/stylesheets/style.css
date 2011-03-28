@@ -57,9 +57,17 @@ fieldset {
   cursor: pointer;
 }
 
-#todo .update button {
+#todo .edit {
+  float: left;
+}
+
+#todo .edit button {
   float: right;
   background: url("../images/edit.png") no-repeat;
+}
+
+#todo .remove {
+  float: left;
 }
 
 #todo .remove button {
@@ -83,4 +91,11 @@ input[type=text] {
   font-size:0.725em;
   padding:3px 4px;
   width:300px;
+  float: left;
+}
+
+.item {
+  display: block;
+  float: left;
+  width:410px;
 }
